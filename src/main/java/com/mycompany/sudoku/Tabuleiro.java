@@ -17,9 +17,8 @@ public class Tabuleiro {
     
     public void Imprimir(){
         System.out.println("======Tabuleiro======");
-
         for (int x = 0; x < 9; x++) {
-           for (int y = 0; y < 9; y++) {
+           for (int y =  0; y < 9; y++) {
                 int valor = tabuleiro[x][y];
                 if(y==2 || y==5){ System.out.print(valor+" | ");}else{
                     System.out.print(valor+" ");
