@@ -3,9 +3,7 @@
  */
 
 package com.mycompany.sudoku;
-
 import java.util.Scanner;
-
 /**
  *
  * @author migue
@@ -15,6 +13,11 @@ public class Sudoku {
         System.out.println("[1.1] Quantos numeros vai sortear? [max:81]");
         Scanner Teclado = new Scanner(System.in);
         int numeros = Teclado.nextInt();
+        Tabuleiro tabuleiro = new Tabuleiro();
+        tabuleiro.sorteiaNumeros(numeros);
+        tabuleiro.Imprimir();
+        
+        
         return numeros;
     }
     public static int jogoDefinido(){

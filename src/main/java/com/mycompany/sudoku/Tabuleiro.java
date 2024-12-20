@@ -48,7 +48,26 @@ public class Tabuleiro {
             }   
         }
     }
-    
+    public void sorteiaNumeros(int qntdNumeros){
+        int totalIteracoes = 81-qntdNumeros;
+        for(int i=0; i<totalIteracoes; i++){
+            int randomPosY= (int) (Math.random() * 9); // De 0 a 9
+            int randomPosX = (int) (Math.random() * 9); // De 0 a 9
+            int itemSelecionado = this.tabuleiro[randomPosY][randomPosX];
+            if( itemSelecionado != 0 ){
+                this.tabuleiro[randomPosY][randomPosX]=0;
+            }else{
+                while(itemSelecionado == 0){
+                    randomPosY= (int) (Math.random() * 9); // De 0 a 9
+                    randomPosX = (int) (Math.random() * 9); // De 0 a 9
+                    itemSelecionado = this.tabuleiro[randomPosY][randomPosX];
+
+                    this.tabuleiro[randomPosY][randomPosX]=0;
+                }
+            }
+            
+        }
+    }
     public Tabuleiro(){
          int _tabuleiro[][]={
                 {1,2,3,  4,5,6,  7,8,9},
@@ -63,9 +82,6 @@ public class Tabuleiro {
                 {6,4,5,  9,7,8,  3,1,2},
                 {9,7,8,  3,1,2,  6,4,5}
          };
-         this.tabuleiro = _tabuleiro;
-         this.bauguncaNumeros();
-         this.Imprimir();
-         
+         this.tabuleiro = _tabuleiro;         
     }
 }
