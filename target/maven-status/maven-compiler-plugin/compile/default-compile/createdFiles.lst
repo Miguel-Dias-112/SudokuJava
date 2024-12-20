@@ -1,2 +1,4 @@
+com\mycompany\sudoku\GameMenu.class
 com\mycompany\sudoku\Tabuleiro.class
+com\mycompany\sudoku\TableRandomizer.class
 com\mycompany\sudoku\Sudoku.class

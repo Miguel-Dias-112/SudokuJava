@@ -8,6 +8,10 @@ package com.mycompany.sudoku;
  *
  * @author migue
  */
-public class Randomizador {
+public class DefinedTable {
+    public int [][] tabuleiro = new int[9][9];
     
+    public DefinedTable( ){
+        
+    }
 }
