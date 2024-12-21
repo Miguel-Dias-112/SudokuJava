@@ -1,7 +1,8 @@
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Casa.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Entrada.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\GameLogic.java
 F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\GameMenu.java
 F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Sudoku.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableDefiner.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableChecker.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\GameLogic.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Insertions.java
 F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableRandomizer.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableDefiner.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableSquare.java

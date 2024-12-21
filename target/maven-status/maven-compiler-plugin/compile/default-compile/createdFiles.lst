@@ -1,7 +1,9 @@
-com\mycompany\sudoku\Entrada.class
 com\mycompany\sudoku\GameMenu.class
 com\mycompany\sudoku\GameLogic.class
 com\mycompany\sudoku\TableRandomizer.class
 com\mycompany\sudoku\TableDefiner.class
-com\mycompany\sudoku\Casa.class
+com\mycompany\sudoku\Repeticao.class
+com\mycompany\sudoku\TableSquare.class
+com\mycompany\sudoku\Insertions.class
+com\mycompany\sudoku\TableChecker.class
 com\mycompany\sudoku\Sudoku.class

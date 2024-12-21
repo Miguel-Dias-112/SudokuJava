@@ -48,16 +48,16 @@ public class TableRandomizer {
         }
         return tabuleiro;
     }
-    public  Casa[][] getTabuleiroSorteado(int val){
+    public  TableSquare[][] getTabuleiroSorteado(int val){
         int[][] tabuleiroSorteado = this.sorteiaValores(val);
-        Casa[][] tabuleiroFinal = new Casa[9][9];
+        TableSquare[][] tabuleiroFinal = new TableSquare[9][9];
         for(int x=0; x<9; x++){
             for(int y=0; y<9; y++){
                 int valor = tabuleiroSorteado[x][y];
                 if(valor!=0){
-                    tabuleiroFinal[x][y] = new Casa(valor,true);
+                    tabuleiroFinal[x][y] = new TableSquare(valor,true);
                 }else{
-                    tabuleiroFinal[x][y] = new Casa(0,false);
+                    tabuleiroFinal[x][y] = new TableSquare(0,false);
                 }
             }
         }

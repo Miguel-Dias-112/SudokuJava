@@ -13,42 +13,8 @@ import java.util.Scanner;
  * @author migue
  */
 public class GameMenu {
-    private GameLogic jogo;
     
-    private int iniciaJogoRandom(){
-        System.out.print("[*]Quantos numeros vai sortear [max:80]: ");
-        Scanner Teclado = new Scanner(System.in);
-        int numeros = Teclado.nextInt();
-        
-        TableRandomizer tabuleiroRandom = new TableRandomizer();
-        Casa[][] tabuleiro = tabuleiroRandom.getTabuleiroSorteado(numeros);
-        jogo = new GameLogic(tabuleiro);
-        
-       jogo.Start();
-        return numeros;
-    }
-    private int iniciaJogoDefinido(){
-        System.out.print("[*] digite as entradas: ");
-        Scanner Teclado = new Scanner(System.in);
-        List<Entrada> EntradasList = new ArrayList<Entrada>();
-        boolean parada= true;
-        while(parada){
-                String[] entradasTexto = Teclado.nextLine().replace("(","").split("\\)");
-                for(String textoEntrada : entradasTexto){
-                    Entrada novaEntrada = new Entrada(textoEntrada);
-                    if(textoEntrada.equals("-1,-1,-1")){
-                        parada=false;
-                    }else{
-                       EntradasList.add(novaEntrada);
-                    }
-                }
-        }
-        TableDefiner Tabuleirodefiner = new TableDefiner(EntradasList);
-        Casa[][] tabuleiroDefinido = Tabuleirodefiner.tabuleiro;
-        jogo = new GameLogic(tabuleiroDefinido);
-
-        return 0;
-    }
+    GameLogic Jogo=  new GameLogic();
     private int OpcoesJogo(){
         System.out.println("=== Voce quer? ===");
         System.out.println("[1] Criar jogo randomico");
@@ -63,10 +29,12 @@ public class GameMenu {
         int opçãoSelecionada = OpcoesJogo();
         switch (opçãoSelecionada) {
             case 1:
-                iniciaJogoRandom();
+                Jogo.iniciaJogoRandom();
+
                 break;
             case 2:
-                iniciaJogoDefinido();
+                Jogo.iniciaJogoDefinido();
+
                 break;
             case 3:
                 System.exit(0);

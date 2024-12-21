@@ -8,10 +8,10 @@ package com.mycompany.sudoku;
  *
  * @author migue
  */
-class Casa{
+public class TableSquare{
     private int valor;
     private boolean blocked;
-    public Casa(int valor,boolean blocked){
+    public TableSquare(int valor,boolean blocked){
         this.blocked=blocked;
         this.valor=valor;
     }
