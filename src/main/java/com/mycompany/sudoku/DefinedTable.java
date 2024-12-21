@@ -4,14 +4,23 @@
  */
 package com.mycompany.sudoku;
 
-/**
- *
- * @author migue
- */
+import java.util.List;
+
+
+
 public class DefinedTable {
     public int [][] tabuleiro = new int[9][9];
     
-    public DefinedTable( ){
-        
+    private void posicionaTabela(Entrada entrada){
+        if(entrada.valida==true){
+            int x = entrada.posX;
+            int y = entrada.posY;
+            tabuleiro[x][y]=entrada.valor;
+        }
+    }
+    public DefinedTable(List<Entrada> Entradas){
+        for(Entrada entrada: Entradas){
+            posicionaTabela(entrada);
+        }
     }
 }

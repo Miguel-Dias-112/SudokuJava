@@ -9,7 +9,7 @@ package com.mycompany.sudoku;
  * @author migue
  */
 public class RandomTable {
-    int [][] tabuleiro = new int[9][9];
+    public int [][] tabuleiro = new int[9][9];
      private void trocaNumeros(int n1, int n2) {
         for (int y = 0; y<9; y++) {
             for (int x = 0; x<9; x++) {
@@ -21,13 +21,13 @@ public class RandomTable {
             }   
         }
     }
-    private final void bauguncaNumeros() {
+    private final void baguncaNumeros() {
         for (int i = 1; i <= 9; i++) { // Números de 1 a 9
             int randomNumber = (int) (Math.random() * 10); // De 0 a 9
             trocaNumeros(i, randomNumber); // Troca posições de i e ranNum
         }
     }
-    public  RandomTable(int qntdNumeros){
+    public int[][] getTabuleiroSorteado(int qntdNumeros){
         int totalIteracoes = 81-qntdNumeros;
         for(int i=0; i<totalIteracoes; i++){
             int randomPosY= (int) (Math.random() * 9); // De 0 a 9
@@ -46,6 +46,7 @@ public class RandomTable {
             }
             
         }
+        return tabuleiro;
     }
     public RandomTable( ){
         int tabuleiro[][]={
@@ -61,8 +62,7 @@ public class RandomTable {
                 {6,4,5,  9,7,8,  3,1,2},
                 {9,7,8,  3,1,2,  6,4,5}
          };
+        baguncaNumeros();
     }
-    public int[][] getTabuleiro(){
-        return tabuleiro;
-    }
+   
 }
