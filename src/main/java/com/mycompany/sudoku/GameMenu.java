@@ -16,37 +16,37 @@ public class GameMenu {
     private GameLogic jogo;
     
     private int iniciaJogoRandom(){
-        System.out.println("[1.1] Quantos numeros vai sortear? [max:81]");
+        System.out.print("[*]Quantos numeros vai sortear [max:80]: ");
         Scanner Teclado = new Scanner(System.in);
         int numeros = Teclado.nextInt();
         
-        RandomTable tabuleiroRandom = new RandomTable();
-        int[][] tabuleiro = tabuleiroRandom.getTabuleiroSorteado(numeros);
+        TableRandomizer tabuleiroRandom = new TableRandomizer();
+        Casa[][] tabuleiro = tabuleiroRandom.getTabuleiroSorteado(numeros);
         jogo = new GameLogic(tabuleiro);
         
+       jogo.Start();
         return numeros;
     }
     private int iniciaJogoDefinido(){
-        System.out.println("[1.1] digite as entradas:");
+        System.out.print("[*] digite as entradas: ");
         Scanner Teclado = new Scanner(System.in);
         List<Entrada> EntradasList = new ArrayList<Entrada>();
         boolean parada= true;
-        
         while(parada){
-               String[] entradasTexto = Teclado.nextLine().replace("(","").split("\\)");
-             for(String textoEntrada : entradasTexto){
-                 Entrada novaEntrada = new Entrada(textoEntrada);
-                 if(textoEntrada.equals("-1,-1,-1")){
-                     parada=false;
-                 }else{
-                    EntradasList.add(novaEntrada);
-                 }
-             }
+                String[] entradasTexto = Teclado.nextLine().replace("(","").split("\\)");
+                for(String textoEntrada : entradasTexto){
+                    Entrada novaEntrada = new Entrada(textoEntrada);
+                    if(textoEntrada.equals("-1,-1,-1")){
+                        parada=false;
+                    }else{
+                       EntradasList.add(novaEntrada);
+                    }
+                }
         }
-        DefinedTable Tabuleirodefiner = new DefinedTable(EntradasList);
-        int[][] tabuleiroDefinido = Tabuleirodefiner.tabuleiro;
+        TableDefiner Tabuleirodefiner = new TableDefiner(EntradasList);
+        Casa[][] tabuleiroDefinido = Tabuleirodefiner.tabuleiro;
         jogo = new GameLogic(tabuleiroDefinido);
-        jogo.Imprimir();
+
         return 0;
     }
     private int OpcoesJogo(){
@@ -54,7 +54,7 @@ public class GameMenu {
         System.out.println("[1] Criar jogo randomico");
         System.out.println("[2] Criar jogo defindo");
         System.out.println("[3] Encerrar");
-        System.out.println("Digite uma alternativa: ");
+        System.out.print("[*] Digite uma alternativa: ");
         Scanner Teclado = new Scanner(System.in);
         int opçãoSelecionada = Teclado.nextInt();
         return opçãoSelecionada;

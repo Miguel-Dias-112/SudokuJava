@@ -13,7 +13,6 @@ public class Sudoku {
     public static void main(String[] args) {
         System.out.println("Bem Vindo!");
         GameMenu menu = new GameMenu();
-        
     }
    
 }
