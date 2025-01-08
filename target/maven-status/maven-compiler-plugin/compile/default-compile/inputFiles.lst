@@ -1,8 +1,10 @@
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\GameMenu.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Vizualizacao\GameLogic.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Modelos\TableSquare.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Modelos\Repetição.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Modelos\Entrada.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Controladores\TableChecker.java
 F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Sudoku.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableChecker.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\GameLogic.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Insertions.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableRandomizer.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableDefiner.java
-F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\TableSquare.java
+F:\JavaProjects\Sudoku\src\main\java\Repetições.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Controladores\Tabuleiro.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Vizualizacao\GameMenu.java
+F:\JavaProjects\Sudoku\src\main\java\com\mycompany\sudoku\Controladores\TableSetter.java

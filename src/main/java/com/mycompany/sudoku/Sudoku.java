@@ -3,6 +3,9 @@
  */
 
 package com.mycompany.sudoku;
+import com.mycompany.sudoku.Modelos.Entrada;
+import com.mycompany.sudoku.Modelos.Repetição;
+import com.mycompany.sudoku.Vizualizacao.GameMenu;
 import java.util.Scanner;
 /**
  *
